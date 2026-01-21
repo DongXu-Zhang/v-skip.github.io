@@ -28,46 +28,40 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://dongxu-zhang.github.io/">
+        <span class="icon">
+            <i class="fas fa-home"></i>
+        </span>
         </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://arxiv.org/abs/2601.13879">
-            <span class="icon">
-                <i class="ai ai-arxiv"></i>
-            </span>
-            <span>V-Skip Paper (ArXiv)</span>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
           </a>
-          
-          <a class="navbar-item" href="https://dongxu-zhang.github.io/">
-            <span class="icon">
-                <i class="fas fa-user"></i>
-            </span>
-            <span>Dongxu Zhang's Homepage</span>
-          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://arxiv.org/abs/2601.13879">
+              <span class="icon"><i class="ai ai-arxiv"></i></span>
+              <span>V-Skip Paper (ArXiv)</span>
+            </a>
+            <a class="navbar-item" href="https://dongxu-zhang.github.io/">
+              <span class="icon"><i class="fas fa-user"></i></span>
+              <span>Dongxu Zhang's Homepage</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-
-  </div>
-</nav>
+  </nav>
 
 
 <section class="hero">
@@ -95,10 +89,10 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Xi'an Jiaotong University,</span>
+            <span class="author-block"><sup>1</sup>XJTU,</span>
             <span class="author-block"><sup>2</sup>CASIA,</span>
             <span class="author-block"><sup>3</sup>Shanghai AI Lab,</span>
-            <span class="author-block"><sup>4</sup>HIT-Sz,</span>
+            <span class="author-block"><sup>4</sup>HITSZ,</span>
             <span class="author-block"><sup>5</sup>USTB</span>
           </div>
           <div class="column has-text-centered">
@@ -112,7 +106,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="https://arxiv.org/pdf/2601.13879"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -121,7 +115,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://arxiv.org/abs/2601.13879"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -130,7 +124,7 @@
                 </a>
               </span>
               <!-- Video Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -138,9 +132,9 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -148,16 +142,16 @@
                   </span>
                   <span>Code</span>
                   </a>
-              </span>
+              </span> -->
               <!-- Dataset Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a>
+                  </a> -->
             </div>
 
           </div>
@@ -170,7 +164,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="./static/images/fig1.pdf" class="interpolation-image" alt="Visual Amnesia Concept"/>
+      <img src="./static/images/fig1.png" class="interpolation-image" alt="Visual Amnesia Concept"/>
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">V-Skip</span> solves <b>Visual Amnesia</b>. 
         Standard text compression (middle) blindly prunes visually essential tokens (e.g., "red"), causing hallucinations. 
@@ -183,191 +177,92 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            While Chain-of-Thought (CoT) reasoning significantly enhances the performance of 
+            Multimodal Large Language Models (MLLMs), its autoregressive nature incurs prohibitive 
+            latency constraints. Current efforts to mitigate this via token compression often fail 
+            by blindly applying text-centric metrics to multimodal contexts.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            We identify a critical failure mode termed <strong>Visual Amnesia</strong>, where 
+            linguistically redundant tokens are erroneously pruned, severing the connection to the input image
+            and leading to hallucinations. To address this, we introduce <strong>V-Skip</strong>, 
+            a novel framework that reformulates token pruning as a Visual-Anchored Information Bottleneck (VA-IB) 
+            optimization problem.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            V-Skip employs a <strong>dual-path gating mechanism</strong> that weighs token importance through 
+            both linguistic surprisal and cross-modal attention flow. This allows the model to identify and 
+            rescue visually salient anchors that would otherwise be discarded. Extensive experiments on 
+            Qwen2-VL and Llama-3.2 families demonstrate that V-Skip achieves a <strong>2.9× speedup</strong> 
+            with negligible accuracy loss, outperforming other baselines by over 30% on the DocVQA benchmark.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
-  </div>
+    </div>
 </section>
 
 
 <section class="section">
   <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+        <h2 class="title is-3">Methodology</h2>
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
+            V-Skip reformulates token pruning as a <strong>Visual-Anchored Information Bottleneck (VA-IB)</strong> problem.
+            The pipeline consists of three stages:
           </p>
+          <ul>
+            <li><strong>Stage 1:</strong> Data Generation using a frozen Teacher MLLM.</li>
+            <li><strong>Stage 2:</strong> Dual-Path Filtering & Pruning, utilizing both <em>Linguistic Surprisal</em> and <em>Visual Attention Flow</em>.</li>
+            <li><strong>Stage 3:</strong> Efficient Fine-tuning via LoRA distillation.</li>
+          </ul>
         </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
+        <img src="./static/images/pipeline.png" class="interpolation-image" alt="V-Skip Architecture"/>
         <div class="content has-text-justified">
           <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
+            As shown above (Figure 2), our method automates the construction of efficient multimodal reasoners.
+            Unlike standard text compression which discards tokens based only on text probability, V-Skip rescues
+            visually salient tokens (anchors) to prevent hallucination.
           </p>
         </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
       </div>
     </div>
-    <!--/ Animation. -->
+  </div>
+</section>
 
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
+        <h2 class="title is-3">Qualitative Comparison</h2>
+        
         <div class="content has-text-justified">
           <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
+            We compare V-Skip against standard text-centric pruning methods (e.g., LLMLingua-2).
+            The example below (from DocVQA) demonstrates the <strong>Information Entropy Mismatch</strong>.
           </p>
+        </div>
+
+        <img src="./static/images/qualitative.png" class="interpolation-image" alt="Qualitative comparison on DocVQA"/>
+        
+        <div class="content has-text-justified">
           <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+            <br>
+            In the invoice example, the key value <strong>"$45.20"</strong> has high linguistic perplexity (it looks like a random number to the LLM)
+            but is visually grounded in the image.
+            Standard methods (LLMLingua-2) prune it, leading to a wrong answer.
+            <strong>V-Skip</strong> detects the high cross-modal attention and preserves the token, answering correctly.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
-
   </div>
 </section>
 
@@ -375,11 +270,14 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@misc{zhangvskip,
+      title={Chain-of-Thought Compression Should Not Be Blind: V-Skip for Efficient Multimodal Reasoning via Dual-Path Anchoring}, 
+      author={Dongxu Zhang and Yiding Sun and Cheng Tan and Wenbiao Yan and Ning Yang and Jihua Zhu and Haijun Zhang},
+      year={2026},
+      eprint={2601.13879},
+      archivePrefix={arXiv},
+      primaryClass={cs.MM},
+      url={https://arxiv.org/abs/2601.13879}, 
 }</code></pre>
   </div>
 </section>
@@ -389,10 +287,10 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+         href="https://arxiv.org/pdf/2601.13879">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/dongxu-zhang" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
@@ -405,11 +303,8 @@
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            This website utilizes the project page template from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
           </p>
         </div>
       </div>
